@@ -24,4 +24,23 @@ document.addEventListener('DOMContentLoaded', () => {
         .catch(error => {
             console.error('Error fetching special numbers:', error);
         });
+
+    // Modal functionality - New
+    const modal = document.getElementById("myModal");
+    const span = document.getElementsByClassName("close")[0];
+
+    // Open modal for demonstration (you can adjust this as needed)
+    setTimeout(() => {
+        modal.style.display = "block";
+    }, 1000);
+
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
 });
