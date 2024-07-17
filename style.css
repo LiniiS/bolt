@@ -207,3 +207,7 @@ h2 {
 .contact a:hover {
     text-decoration: underline;
 }
+.lottery-link {
+    text-decoration: underline;
+    color: inherit;
+}
